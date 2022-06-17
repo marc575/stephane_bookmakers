@@ -27,11 +27,9 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
         $this->parent = false;
 
         $this->blocks = [
+            'title' => [$this, 'block_title'],
             'inscription' => [$this, 'block_inscription'],
             'bookmakers' => [$this, 'block_bookmakers'],
-            'image_bookmaker' => [$this, 'block_image_bookmaker'],
-            'bookmaker' => [$this, 'block_bookmaker'],
-            'start' => [$this, 'block_start'],
             'content' => [$this, 'block_content'],
             'footer_bookmakers' => [$this, 'block_footer_bookmakers'],
         ];
@@ -69,7 +67,10 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
     <meta name=\"twitter:title\" property=\"og:title\" itemprop=\"name\" content=\"Setphsport - Nous proposons un code promotionnel unique pour 5 bookmakers\">
     <meta name=\"twitter:description\" property=\"og:description\" itemprop=\"description\" content=\"Notre code promotionnel * D555 * vous fera recevoir une multitude de bonus après inscriptions sur 1xbet, betWinner, LineBet, 1Win, Melbet.\">
 
-    <title>Setphsport - Code Promo D555</title>
+    <title>";
+        // line 20
+        $this->displayBlock('title', $context, $blocks);
+        echo "- Code Promo D555</title>
     <!-- Favicon -->
     <link rel=\"icon\" href=\"";
         // line 22
@@ -170,8 +171,8 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
 </header><!-- #header -->
 
 <!--==========================
-  Intro Section
-============================-->
+    Intro Section
+  ============================-->
 <section id=\"intro\">
     <div class=\"intro-container\">
         <div id=\"introCarousel\" class=\"carousel  slide carousel-fade\" data-ride=\"carousel\">
@@ -180,45 +181,93 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
 
             <div class=\"carousel-inner\" role=\"listbox\">
 
-                ";
+                <div class=\"carousel-item active\" style=\"background-image: url(";
         // line 97
-        $this->displayBlock('image_bookmaker', $context, $blocks);
-        // line 98
-        echo "                <div class=\"carousel-container\">
-                    <div class=\"carousel-content\">
-                        <h2>";
-        // line 100
-        $this->displayBlock('bookmaker', $context, $blocks);
-        echo "</h2>
-                        ";
-        // line 101
-        $this->displayBlock('start', $context, $blocks);
-        // line 102
-        echo "                    </div>
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/img/1xbet/1xbet.png"), "html", null, true);
+        echo ")\">
+                    <div class=\"carousel-container\">
+                        <div class=\"carousel-content\">
+                            <h2>1xBet</h2>
+                            <p>1xBet est actif sur Internet depuis 2011 et accepte les paris sportifs sur la base d'une licence internationale obtenue sur l'île de Curaçao. C'est le premier bookmaker à avoir proposé une aussi bonne sélection de marchés sportifs et le fameux bonus de 200% pour la première recharge. Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+                            <a href=\"\" class=\"btn-get-started scrollto\">S'inscrire</a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class=\"carousel-item\" style=\"background-image: url(";
+        // line 107
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/img/1win/1win.jpg"), "html", null, true);
+        echo ")\">
+                    <div class=\"carousel-container\">
+                        <div class=\"carousel-content\">
+                            <h2>1Win</h2>
+                            <p>1win est un bookmaker assez jeune. La société a été fondée en 2016, jusqu’en 2018, elle était FirstBet.1win accepte des joueurs  du monde entier, y compris du continent africain, le site est traduit et adapté en 9 langues dont le français. Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+                            <a href=\"https://1wvua.top/#hzlt\" class=\"btn-get-started scrollto\">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"carousel-item\" style=\"background-image: url(";
+        // line 117
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/img/linebet/linebet.jpg"), "html", null, true);
+        echo ")\">
+                    <div class=\"carousel-container\">
+                        <div class=\"carousel-content\">
+                            <h2>LineBet</h2>
+                            <p>LINEBET est titulaire de la licence internationale de Curaçao n° 8048 / JAZ. Faites des paris sur tous les événements dans l'application mobile LINEBET! Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+                            <a href=\"https://m.Linebet.com/fr/?whn=desctop\" class=\"btn-get-started scrollto\">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"carousel-item\" style=\"background-image: url(";
+        // line 127
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/img/betwinner/betwinner.jpg"), "html", null, true);
+        echo ")\">
+                    <div class=\"carousel-container\">
+                        <div class=\"carousel-content\">
+                            <h2>BetWinner</h2>
+                            <p>Betwinner est un bookmaker de nouvelle génération qui travaille depuis 2018. Le site officiel est fait dans des couleurs agréables, dispose d’une interface moderne et compréhensible. Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+                            <a href=\"https://bwredir.com/1bY0?p=/user/registration/\" class=\"btn-get-started scrollto\">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"carousel-item\" style=\"background-image: url(";
+        // line 137
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/melbet/melbet.jpg"), "html", null, true);
+        echo ")\">
+                    <div class=\"carousel-container\">
+                        <div class=\"carousel-content\">
+                            <h2>MelBet</h2>
+                            <p>La société de paris Melbet propose une vaste offre de paris sportif en ligne. Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+                            <a href=\"https://m.melbet.com/\" class=\"btn-get-started scrollto\">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
+            <a class=\"carousel-control-prev\" href=\"#introCarousel\" role=\"button\" data-slide=\"prev\">
+                <span class=\"carousel-control-prev-icon ion-chevron-left\" aria-hidden=\"true\"></span>
+                <span class=\"sr-only\">Previous</span>
+            </a>
+
+            <a class=\"carousel-control-next\" href=\"#introCarousel\" role=\"button\" data-slide=\"next\">
+                <span class=\"carousel-control-next-icon ion-chevron-right\" aria-hidden=\"true\"></span>
+                <span class=\"sr-only\">Next</span>
+            </a>
+
         </div>
-
-        <a class=\"carousel-control-prev\" href=\"#introCarousel\" role=\"button\" data-slide=\"prev\">
-            <span class=\"carousel-control-prev-icon ion-chevron-left\" aria-hidden=\"true\"></span>
-            <span class=\"sr-only\">Previous</span>
-        </a>
-
-        <a class=\"carousel-control-next\" href=\"#introCarousel\" role=\"button\" data-slide=\"next\">
-            <span class=\"carousel-control-next-icon ion-chevron-right\" aria-hidden=\"true\"></span>
-            <span class=\"sr-only\">Next</span>
-        </a>
-
     </div>
 </section><!-- #intro -->
 
 <br><br>
 <!-- ##### Hero Area End ##### -->
 ";
-        // line 123
+        // line 165
         $this->displayBlock('content', $context, $blocks);
-        // line 126
+        // line 168
         echo "
 <!-- ##### Footer Area Start ##### -->
 
@@ -239,9 +288,9 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
                     <h4>Liens rapides</h4>
                     <ul>
                         ";
-        // line 145
+        // line 187
         $this->displayBlock('footer_bookmakers', $context, $blocks);
-        // line 148
+        // line 190
         echo "                    </ul>
                 </div>
 
@@ -278,93 +327,93 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
 
 <!-- JavaScript Libraries -->
 <script src=\"";
-        // line 183
+        // line 225
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/jquery/jquery.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 184
+        // line 226
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/jquery/jquery-migrate.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 185
+        // line 227
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/bootstrap/js/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 186
+        // line 228
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/easing/easing.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 187
+        // line 229
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/superfish/hoverIntent.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 188
+        // line 230
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/superfish/superfish.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 189
+        // line 231
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/wow/wow.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 190
+        // line 232
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/waypoints/waypoints.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 191
+        // line 233
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/counterup/counterup.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 192
+        // line 234
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/owlcarousel/owl.carousel.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 193
+        // line 235
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/isotope/isotope.pkgd.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 194
+        // line 236
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/lightbox/js/lightbox.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 195
+        // line 237
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/lib/touchSwipe/jquery.touchSwipe.min.js"), "html", null, true);
         echo "\"></script>
 <!-- Contact Form JavaScript File -->
 <script src=\"";
-        // line 197
+        // line 239
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/contactform/contactform.js"), "html", null, true);
         echo "\"></script>
 
 <!-- Template Main Javascript File -->
 <script src=\"";
-        // line 200
+        // line 242
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/js/main.js"), "html", null, true);
         echo "\"></script>
 
 <!-- ##### All Javascript Files ##### -->
 <!-- jQuery-2.2.4 js -->
 <script src=\"";
-        // line 204
+        // line 246
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("./assets/js/jquery/jquery-2.2.4.min.js"), "html", null, true);
         echo "\"></script>
 <!-- Popper js -->
 <script src=\"";
-        // line 206
+        // line 248
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("./assets/js/bootstrap/popper.min.js"), "html", null, true);
         echo "\"></script>
 <!-- Bootstrap js -->
 <script src=\"";
-        // line 208
+        // line 250
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("./assets/js/bootstrap/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
 <!-- All Plugins js -->
 <script src=\"";
-        // line 210
+        // line 252
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("./assets/js/plugins/plugins.js"), "html", null, true);
         echo "\"></script>
 <!-- Active js -->
 <script src=\"";
-        // line 212
+        // line 254
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("./assets/js/active.js"), "html", null, true);
         echo "\"></script>
 </body>
@@ -375,6 +424,25 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+    }
+
+    // line 20
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        echo " ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
     }
 
@@ -418,64 +486,7 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
 
     }
 
-    // line 97
-    public function block_image_bookmaker($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "image_bookmaker"));
-
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "image_bookmaker"));
-
-        echo "  ";
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
-    }
-
-    // line 100
-    public function block_bookmaker($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "bookmaker"));
-
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "bookmaker"));
-
-        echo "  ";
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
-    }
-
-    // line 101
-    public function block_start($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "start"));
-
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "start"));
-
-        echo " ";
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
-    }
-
-    // line 123
+    // line 165
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -485,7 +496,7 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 124
+        // line 166
         echo "
 ";
         
@@ -496,7 +507,7 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
 
     }
 
-    // line 145
+    // line 187
     public function block_footer_bookmakers($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -506,7 +517,7 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer_bookmakers"));
 
-        // line 146
+        // line 188
         echo "
                         ";
         
@@ -529,7 +540,7 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
 
     public function getDebugInfo()
     {
-        return array (  510 => 146,  500 => 145,  489 => 124,  479 => 123,  460 => 101,  441 => 100,  422 => 97,  411 => 78,  401 => 77,  382 => 76,  368 => 212,  363 => 210,  358 => 208,  353 => 206,  348 => 204,  341 => 200,  335 => 197,  330 => 195,  326 => 194,  322 => 193,  318 => 192,  314 => 191,  310 => 190,  306 => 189,  302 => 188,  298 => 187,  294 => 186,  290 => 185,  286 => 184,  282 => 183,  245 => 148,  243 => 145,  222 => 126,  220 => 123,  197 => 102,  195 => 101,  191 => 100,  187 => 98,  185 => 97,  166 => 80,  164 => 77,  160 => 76,  130 => 49,  119 => 41,  113 => 38,  109 => 37,  105 => 36,  101 => 35,  97 => 34,  91 => 31,  82 => 25,  76 => 22,  67 => 16,  50 => 1,);
+        return array (  521 => 188,  511 => 187,  500 => 166,  490 => 165,  479 => 78,  469 => 77,  450 => 76,  431 => 20,  417 => 254,  412 => 252,  407 => 250,  402 => 248,  397 => 246,  390 => 242,  384 => 239,  379 => 237,  375 => 236,  371 => 235,  367 => 234,  363 => 233,  359 => 232,  355 => 231,  351 => 230,  347 => 229,  343 => 228,  339 => 227,  335 => 226,  331 => 225,  294 => 190,  292 => 187,  271 => 168,  269 => 165,  238 => 137,  225 => 127,  212 => 117,  199 => 107,  186 => 97,  167 => 80,  165 => 77,  161 => 76,  131 => 49,  120 => 41,  114 => 38,  110 => 37,  106 => 36,  102 => 35,  98 => 34,  92 => 31,  83 => 25,  77 => 22,  72 => 20,  65 => 16,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -553,7 +564,7 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
     <meta name=\"twitter:title\" property=\"og:title\" itemprop=\"name\" content=\"Setphsport - Nous proposons un code promotionnel unique pour 5 bookmakers\">
     <meta name=\"twitter:description\" property=\"og:description\" itemprop=\"description\" content=\"Notre code promotionnel * D555 * vous fera recevoir une multitude de bonus après inscriptions sur 1xbet, betWinner, LineBet, 1Win, Melbet.\">
 
-    <title>Setphsport - Code Promo D555</title>
+    <title>{% block title %} {% endblock %}- Code Promo D555</title>
     <!-- Favicon -->
     <link rel=\"icon\" href=\"{{ asset(\"./assets/img/logo_p.png\") }}\">
 
@@ -620,8 +631,8 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
 </header><!-- #header -->
 
 <!--==========================
-  Intro Section
-============================-->
+    Intro Section
+  ============================-->
 <section id=\"intro\">
     <div class=\"intro-container\">
         <div id=\"introCarousel\" class=\"carousel  slide carousel-fade\" data-ride=\"carousel\">
@@ -630,27 +641,69 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
 
             <div class=\"carousel-inner\" role=\"listbox\">
 
-                {% block image_bookmaker %}  {% endblock %}
-                <div class=\"carousel-container\">
-                    <div class=\"carousel-content\">
-                        <h2>{% block bookmaker %}  {% endblock %}</h2>
-                        {% block start %} {% endblock %}
+                <div class=\"carousel-item active\" style=\"background-image: url({{ asset(\"assets/index/img/1xbet/1xbet.png\") }})\">
+                    <div class=\"carousel-container\">
+                        <div class=\"carousel-content\">
+                            <h2>1xBet</h2>
+                            <p>1xBet est actif sur Internet depuis 2011 et accepte les paris sportifs sur la base d'une licence internationale obtenue sur l'île de Curaçao. C'est le premier bookmaker à avoir proposé une aussi bonne sélection de marchés sportifs et le fameux bonus de 200% pour la première recharge. Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+                            <a href=\"\" class=\"btn-get-started scrollto\">S'inscrire</a>
+                        </div>
                     </div>
                 </div>
+
+                <div class=\"carousel-item\" style=\"background-image: url({{ asset(\"assets/index/img/1win/1win.jpg\") }})\">
+                    <div class=\"carousel-container\">
+                        <div class=\"carousel-content\">
+                            <h2>1Win</h2>
+                            <p>1win est un bookmaker assez jeune. La société a été fondée en 2016, jusqu’en 2018, elle était FirstBet.1win accepte des joueurs  du monde entier, y compris du continent africain, le site est traduit et adapté en 9 langues dont le français. Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+                            <a href=\"https://1wvua.top/#hzlt\" class=\"btn-get-started scrollto\">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"carousel-item\" style=\"background-image: url({{ asset(\"assets/index/img/linebet/linebet.jpg\") }})\">
+                    <div class=\"carousel-container\">
+                        <div class=\"carousel-content\">
+                            <h2>LineBet</h2>
+                            <p>LINEBET est titulaire de la licence internationale de Curaçao n° 8048 / JAZ. Faites des paris sur tous les événements dans l'application mobile LINEBET! Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+                            <a href=\"https://m.Linebet.com/fr/?whn=desctop\" class=\"btn-get-started scrollto\">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"carousel-item\" style=\"background-image: url({{ asset(\"assets/index/img/betwinner/betwinner.jpg\") }})\">
+                    <div class=\"carousel-container\">
+                        <div class=\"carousel-content\">
+                            <h2>BetWinner</h2>
+                            <p>Betwinner est un bookmaker de nouvelle génération qui travaille depuis 2018. Le site officiel est fait dans des couleurs agréables, dispose d’une interface moderne et compréhensible. Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+                            <a href=\"https://bwredir.com/1bY0?p=/user/registration/\" class=\"btn-get-started scrollto\">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"carousel-item\" style=\"background-image: url({{ asset(\"assets/img/melbet/melbet.jpg\") }})\">
+                    <div class=\"carousel-container\">
+                        <div class=\"carousel-content\">
+                            <h2>MelBet</h2>
+                            <p>La société de paris Melbet propose une vaste offre de paris sportif en ligne. Inscrivez-vous avec notre <strong>code promotionnel</strong> pour benéficiez de la multitude bonus offerte aux nouveaux !</p>
+                            <a href=\"https://m.melbet.com/\" class=\"btn-get-started scrollto\">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
+            <a class=\"carousel-control-prev\" href=\"#introCarousel\" role=\"button\" data-slide=\"prev\">
+                <span class=\"carousel-control-prev-icon ion-chevron-left\" aria-hidden=\"true\"></span>
+                <span class=\"sr-only\">Previous</span>
+            </a>
+
+            <a class=\"carousel-control-next\" href=\"#introCarousel\" role=\"button\" data-slide=\"next\">
+                <span class=\"carousel-control-next-icon ion-chevron-right\" aria-hidden=\"true\"></span>
+                <span class=\"sr-only\">Next</span>
+            </a>
+
         </div>
-
-        <a class=\"carousel-control-prev\" href=\"#introCarousel\" role=\"button\" data-slide=\"prev\">
-            <span class=\"carousel-control-prev-icon ion-chevron-left\" aria-hidden=\"true\"></span>
-            <span class=\"sr-only\">Previous</span>
-        </a>
-
-        <a class=\"carousel-control-next\" href=\"#introCarousel\" role=\"button\" data-slide=\"next\">
-            <span class=\"carousel-control-next-icon ion-chevron-right\" aria-hidden=\"true\"></span>
-            <span class=\"sr-only\">Next</span>
-        </a>
-
     </div>
 </section><!-- #intro -->
 
@@ -748,6 +801,6 @@ class __TwigTemplate_485be5a9534c432d41c99948ff9297cd571fea01babb5ed4491139d20ef
 <script src=\"{{ asset(\"./assets/js/active.js\") }}\"></script>
 </body>
 
-</html>", "./index.html.twig", "C:\\laragon\\www\\setphSport2-main\\templates\\index.html.twig");
+</html>", "./index.html.twig", "C:\\laragon\\www\\D555\\templates\\index.html.twig");
     }
 }

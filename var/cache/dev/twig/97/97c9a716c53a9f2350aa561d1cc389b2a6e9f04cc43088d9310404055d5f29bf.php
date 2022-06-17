@@ -51,14 +51,13 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
     <title>1xbet Code Promotionnel - D555 -</title>
 
     <!-- Favicon -->
-    <!-- Favicons -->
     <link href=\"";
-        // line 10
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/img/logo9.png"), "html", null, true);
+        // line 9
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("./assets/img/logo_p.png"), "html", null, true);
         echo "\" rel=\"icon\">
     <link href=\"";
-        // line 11
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/index/img/logo9.png"), "html", null, true);
+        // line 10
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("./assets/img/logo_p.png"), "html", null, true);
         echo "\" rel=\"apple-touch-icon\">
 
     <meta name=\"author\" content=\"Marc Tatchou\">
@@ -73,37 +72,37 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
 
     <link href=\"https://fonts.googleapis.com/css?family=Montserrat:300,400,600&amp;subset=latin-ext\" rel=\"stylesheet\">
     ";
-        // line 25
+        // line 24
         echo "
     <!-- Core Stylesheet -->
     <link rel=\"stylesheet\" href=\"";
-        // line 27
+        // line 26
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/base/css/main.css"), "html", null, true);
         echo "\">
     ";
-        // line 28
+        // line 27
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 31
+        // line 30
         echo "
     <!-- JS -->
     <script src=\"";
-        // line 33
+        // line 32
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/base/js/vendor/modernizr-2.8.3.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 34
+        // line 33
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/base/js/vendor/jquery-1.12.0.min.js"), "html", null, true);
         echo "\"></script>
     ";
-        // line 35
+        // line 34
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 38
+        // line 37
         echo "</head>
 <body>
 ";
-        // line 40
+        // line 39
         $this->displayBlock('body', $context, $blocks);
-        // line 93
+        // line 92
         echo "</body>
 </html>
 ";
@@ -115,7 +114,7 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
 
     }
 
-    // line 28
+    // line 27
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -125,7 +124,7 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 29
+        // line 28
         echo "
     ";
         
@@ -136,7 +135,7 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
 
     }
 
-    // line 35
+    // line 34
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -146,7 +145,7 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 36
+        // line 35
         echo "
     ";
         
@@ -157,7 +156,7 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
 
     }
 
-    // line 40
+    // line 39
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -167,11 +166,11 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 41
+        // line 40
         echo "
     <div class=\"site\" id=\"page\">
         <a class=\"skip-link sr-only\" href=\"";
-        // line 43
+        // line 42
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("base");
         echo "#\">#</a>
 
@@ -180,7 +179,7 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
             <div class=\"hero-section__wrap\">
                 <div class=\"hero-section__option\">
                     <img src=\"";
-        // line 49
+        // line 48
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/base/images/bg_1.jpg"), "html", null, true);
         echo "\" alt=\"Hero section image\">
                 </div>
@@ -204,7 +203,7 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
 
                                 <!-- Options btn color: .btn-success | .btn-info | .btn-warning | .btn-danger | .btn-primary -->
                                 <div class=\"title__action\"><a href=\"";
-        // line 70
+        // line 69
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("1xbet");
         echo "\" class=\"btn btn-success\" style=\"font-size: 10px\">Cliquer içi</a></div>
                                 <br><br>
@@ -227,11 +226,11 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
 
     <!-- JS -->
     <script src=\"";
-        // line 90
+        // line 89
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/base/js/plugins/animate-headline.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 91
+        // line 90
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/base/js/main.js"), "html", null, true);
         echo "\"></script>
 ";
@@ -255,7 +254,7 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
 
     public function getDebugInfo()
     {
-        return array (  235 => 91,  231 => 90,  208 => 70,  184 => 49,  175 => 43,  171 => 41,  161 => 40,  150 => 36,  140 => 35,  129 => 29,  119 => 28,  107 => 93,  105 => 40,  101 => 38,  99 => 35,  95 => 34,  91 => 33,  87 => 31,  85 => 28,  81 => 27,  77 => 25,  61 => 11,  57 => 10,  46 => 1,);
+        return array (  234 => 90,  230 => 89,  207 => 69,  183 => 48,  174 => 42,  170 => 40,  160 => 39,  149 => 35,  139 => 34,  128 => 28,  118 => 27,  106 => 92,  104 => 39,  100 => 37,  98 => 34,  94 => 33,  90 => 32,  86 => 30,  84 => 27,  80 => 26,  76 => 24,  60 => 10,  56 => 9,  46 => 1,);
     }
 
     public function getSourceContext()
@@ -268,9 +267,8 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
     <title>1xbet Code Promotionnel - D555 -</title>
 
     <!-- Favicon -->
-    <!-- Favicons -->
-    <link href=\"{{ asset(\"assets/index/img/logo9.png\") }}\" rel=\"icon\">
-    <link href=\"{{ asset(\"assets/index/img/logo9.png\") }}\" rel=\"apple-touch-icon\">
+    <link href=\"{{ asset(\"./assets/img/logo_p.png\") }}\" rel=\"icon\">
+    <link href=\"{{ asset(\"./assets/img/logo_p.png\") }}\" rel=\"apple-touch-icon\">
 
     <meta name=\"author\" content=\"Marc Tatchou\">
 
@@ -354,6 +352,6 @@ class __TwigTemplate_e205d81826005fbf1bcb23bee86d79bb38d77ec98501c3b1d7eb56c7960
 {% endblock %}
 </body>
 </html>
-", "base.html.twig", "C:\\laragon\\www\\setphSport2-main\\templates\\base.html.twig");
+", "base.html.twig", "C:\\laragon\\www\\D555\\templates\\base.html.twig");
     }
 }
